@@ -1,0 +1,22 @@
+extends ../shared/template
+block content
+  h1 Create A New Client Profile
+  .row
+    .col-xs-6
+      .form-group.form-group-sm
+        label(for='name') Name
+        input#name.form-control(type='text')
+      .form-group.form-group-sm
+        label(for='city') Gender
+        input#gender.form-control(type='text')
+      .form-group.form-group-sm
+        label(for='city') City
+        input#city.form-control(type='text')
+      .form-group.form-group-sm
+        label(for='photo') Photo
+        input#photo.form-control(type='text')
+      .form-group.form-group-sm
+        label(for='balance') Balance
+        input#balance.form-control(type='text')
+      .form-group.form-group-sm
+        button#profile.btn.btn-primary Create Profile

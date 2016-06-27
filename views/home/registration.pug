@@ -1,0 +1,22 @@
+extends ../shared/template
+block content
+  h1 Create a Travel Plan
+  ul#plan
+    li
+      span Country: Please select a country where you want to travel.
+      select(name='country')
+        option(value='', selected='selected') Select a Country
+        option(value='USA') USA
+        option(value='Canada') Canada
+        option(value='Mexico') Mexico
+    li
+      span City: Please select a city where you want to travel.
+      select(name='city')
+        option(value='', selected='selected') Select a City
+        option(value='New York') New York
+        option(value='Los Angeles') Los Angeles
+        option(value='Chicago') Chicago
+        option(value='San Francisco') San Francisco
+    li
+      span Amount (US Dollars)
+      input#amount(type=text)

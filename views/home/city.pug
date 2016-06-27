@@ -1,0 +1,21 @@
+extends ../shared/template
+block content
+  h1 Create A New City
+  ul
+    li
+      span Name
+      input#cityName(type=text)
+    li
+      span Photo
+      input#cityPhoto(type=text)
+      hr
+    button#createCity Create a New City
+
+  if cities
+    h2 List of Available Cities
+      ul#cities
+        each city in cities
+          li #{city.name}
+          each photo in city.photoes
+              img.country#cities(src=photo)
+          li #{city.balance}
